@@ -11,11 +11,17 @@ class MyBot {
     async onTurn(turnContext) {
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         if (turnContext.activity.type === ActivityTypes.Message) {
-            await turnContext.sendActivity(`You said '${ turnContext.activity.text }'`);
+            await turnContext.sendActivity(`Tu  dices '${ turnContext.activity.text }'`);
         } else {
-            await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
+            await turnContext.sendActivity(`[${ turnContext.activity.type } evento detectado by marquema]`);
         }
     }
 }
+
+
+
+
+
+
 
 module.exports.MyBot = MyBot;
